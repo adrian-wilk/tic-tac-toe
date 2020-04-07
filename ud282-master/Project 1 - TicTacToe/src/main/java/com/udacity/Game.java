@@ -177,6 +177,18 @@ public class Game {
             }
 
         }
+        int total =0;
+        for(int i=0; i<grid.length; i++){
+            for(int j=0; j<grid.length; j++) {
+                if (grid[i][j] != '-') {
+                    total = total + 1;
+                }
+            }
+
+        }
+if(total == grid.length*grid.length){
+    return "It's a Tie.";
+}
         return result;
     }
 
