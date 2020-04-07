@@ -151,7 +151,7 @@ public class Game {
     public String checkGameWinner(char [][]grid) {
         String result = "None";
         char[] symbol = {'x', 'o'};
-        String[] winner = {"Congratulations, the X won the game!", "You lost, the Y won the game"};
+        String[] winner = {"x wins", "o wins"};
 
         // This will check possible win for both for 'x' and 'o' symbols.
         for (int i = 0; i < symbol.length; i++) {
@@ -187,7 +187,7 @@ public class Game {
 
         }
 if(total == grid.length*grid.length){
-    return "It's a Tie.";
+    return "tie";
 }
         return result;
     }
